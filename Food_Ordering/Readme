@@ -1,0 +1,154 @@
+# Online Food Ordering System (Python + SQLite)
+
+## Project Overview
+
+The Online Food Ordering System is a database-driven application developed using Python and SQLite. It allows customers to register, log in, view available food items, and place orders.
+
+The system supports three different user roles: Admin, Customer, and Staff. Each role has different responsibilities and access to system operations.
+
+SQLite is used to store user details, food information, and order records.
+
+## Features
+
+### 1. User Registration and Login
+- New users can create an account.
+- Registered users can log in.
+- User details are stored in the SQLite database.
+- Users can log out of their accounts.
+
+### 2. Role-Based Access
+
+The system supports three roles:
+
+| Role | Responsibilities |
+|---|---|
+| Admin | Manage users, food items, and system records. |
+| Customer | View food items and place orders. |
+| Staff | View and manage customer orders. |
+
+### 3. Food Management
+- Add new food items.
+- View available food items.
+- Update food details.
+- Delete food items.
+
+### 4. Order Management
+- Customers can place food orders.
+- Order information is stored in the database.
+- Staff can view and manage orders.
+- Order records can be updated.
+
+### 5. Database Management
+- Automatically creates the database when required.
+- Uses primary keys and foreign keys.
+- Stores related information in multiple tables.
+
+## Technologies Used
+
+- **Programming Language:** Python 3
+- **Database:** SQLite
+- **Database Module:** sqlite3
+- **Interface:** Command Line Interface (CLI)
+
+## Database Structure
+
+The database is designed using related tables.
+
+| Table | Purpose |
+|---|---|
+| `users` | Stores user registration details and roles. |
+| `food_items` | Stores food names, prices, and availability. |
+| `orders` | Stores customer order information. |
+| `order_items` | Stores individual food items belonging to an order. |
+
+### Database Relationships
+
+- Each user can place multiple orders.
+- Each order belongs to a customer.
+- Each order can contain multiple food items.
+- Food items are connected to orders through the order-items table.
+
+Primary keys and foreign keys are used to maintain relationships between the tables.
+
+## Project Structure
+
+```text
+Online-Food-Ordering-System/
+│
+├── main.py
+├── database.py
+├── users.py
+├── food.py
+├── orders.py
+├── task.db
+└── README.md
+```
+
+| File | Description |
+|---|---|
+| `main.py` | Main program and menu navigation. |
+| `database.py` | Database connection and table creation. |
+| `users.py` | Registration, login, and user-related operations. |
+| `food.py` | Food item management. |
+| `orders.py` | Customer order and order management operations. |
+| `task.db` | SQLite database file, generated when the program runs. |
+| `README.md` | Project documentation. |
+
+*The file names above are a suggested structure. Adjust them to match your actual Python files.*
+
+## How to Run the Project
+
+### Prerequisites
+
+- Python 3 installed on your computer.
+- VS Code or another Python editor.
+- SQLite support through Python's built-in `sqlite3` module.
+
+### Steps
+
+1. Download or clone the project.
+2. Open the project folder in VS Code.
+3. Open the terminal.
+4. Run the main Python file:
+
+```bash
+python main.py
+```
+
+5. The database and required tables will be created automatically if the program is configured to do so.
+6. Register a new account or log in.
+7. Select the available operations according to your user role.
+
+## Application Workflow
+
+1. Start the application.
+2. Register or log in.
+3. The system identifies the user's role.
+4. The user accesses the available menu.
+5. Customers can browse food items and place orders.
+6. Staff can manage customer orders.
+7. Admin can manage food items and user records.
+8. Users can log out.
+
+## Learning Outcomes
+
+- Understanding Python and SQLite integration.
+- Creating and managing database tables.
+- Using primary keys and foreign keys.
+- Performing CRUD operations.
+- Implementing registration and login functionality.
+- Understanding role-based access.
+- Working with SQL queries.
+- Managing related database records.
+
+## Future Improvements
+
+- Add an online payment option.
+- Develop a graphical user interface.
+- Add order tracking.
+- Generate customer bills and receipts.
+- Add food search and category filters.
+
+## Author
+
+Developed as a Python and SQLite database management project.

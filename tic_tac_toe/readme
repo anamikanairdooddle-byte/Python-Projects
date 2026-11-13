@@ -1,1 +1,88 @@
+# Tic-Tac-Toe Game (Python)
 
+## Project Overview
+
+Tic-Tac-Toe is a simple two-player, console-based game developed using Python. Players take turns placing X and O on a 3×3 game board. The first player to match three symbols horizontally, vertically, or diagonally wins the game.
+
+If all nine cells are filled without a winner, the game ends in a draw.
+
+## Features
+
+- Two-player gameplay.
+- 3×3 game board.
+- Player 1 uses X and Player 2 uses O.
+- Players select cells using numbers from 1 to 9.
+- Input validation for incorrect entries.
+- Prevents players from selecting occupied cells.
+- Automatic winner detection.
+- Draw detection.
+- Option to play again.
+
+## Technologies Used
+
+- **Programming Language:** Python 3
+- **Interface:** Command Line Interface (CLI)
+- **Concepts:** Functions, Lists, Loops, Conditional Statements and User Input.
+
+## Project Structure
+
+```text
+Tic-Tac-Toe/
+│
+├── tic_tac_toe.py
+└── README.md
+```
+
+| File | Description |
+|---|---|
+| `tic_tac_toe.py` | Contains the complete game logic and execution. |
+| `README.md` | Contains project information and instructions. |
+
+## How to Run the Project
+
+### Prerequisites
+
+- Python 3 installed on your computer.
+- A code editor such as VS Code or any Python IDE.
+
+### Steps
+
+1. Download or clone the project.
+2. Open the project folder in your code editor.
+3. Open the terminal.
+4. Run the following command:
+
+```bash
+python tic_tac_toe.py
+```
+
+5. Follow the instructions displayed on the screen.
+6. Enter a cell number between 1 and 9 to make your move.
+
+## How to Play
+
+1. Player 1 starts with X.
+2. Player 2 plays with O.
+3. Select an available cell using its number.
+4. Players take turns until someone wins or the board is full.
+5. Choose whether to play another round.
+
+## Learning Outcomes
+
+- Understanding Python functions.
+- Working with lists and indexes.
+- Using loops for repeated operations.
+- Applying conditional statements.
+- Validating user input.
+- Implementing basic game logic.
+
+## Future Improvements
+
+- Add a single-player mode against the computer.
+- Create a graphical user interface.
+- Add a score-tracking system.
+- Improve the game design and user experience.
+
+## Author
+
+Developed as a Python programming project.
